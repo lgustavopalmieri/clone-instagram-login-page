@@ -76,9 +76,11 @@ body{
     align-items: center;
     border-radius: 50%;
     overflow: hidden; /*ele limita as bordas*/
+    
 }
 
 .profile-photo img{
+    width: 7rem; /*added to correct distortion*/
     height: 6rem;
 }
 
@@ -111,6 +113,7 @@ body{
     justify-content: center;
     width: 100%;
     padding: 1.3rem 0;
+    margin-bottom: 15%;
 }
 
 .download{
@@ -162,4 +165,81 @@ body{
     .group{
         border: 1px solid transparent;
     }
+
+   
+}
+
+/*plus beyond the course program*/
+
+
+.plus{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 90%;
+    
+    padding: 0.3rem 0;
+    
+    
+}
+
+
+
+
+.plus a{
+    margin: 0.2rem ;
+    color: #005791;
+    font-weight: bold;
+    
+}
+
+
+@media(max-width: 1060px){
+    .plus{
+        width: 100%;
+    }
+
+
+@media(max-width: 320px){
+    .plus{
+        width: 100%;
+    }
+
+    .app-download{
+        height: 2rem;
+        
+        margin: 0.2rem;
+        background-size: cover;
+        
+    }
+
+    .download{
+       
+        width: 80%;
+}
+
+@media(max-width:280px) {
+    .plus{
+        width: 100%;
+        
+    }
+
+    .plus a{
+        margin: 0.2rem;
+        font-size: 80%;
+        
+    }
+
+    .app-download{
+        height: 2rem;
+        width: 100%;
+        background-size: cover;
+        
+    }
+
+    .download{
+        
+        width: 90%;
+    
 }
